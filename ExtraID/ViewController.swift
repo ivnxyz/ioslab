@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    lazy var teachersClient: TeachersClient = {
+       return TeachersClient()
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        teachersClient.getTeacherProfile(teacherId: "KC7eobNOW1KIR9mluPYw")
     }
 
 

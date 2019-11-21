@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		A65B3453238719AD00B9711C /* ExtraIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B3452238719AD00B9711C /* ExtraIDTests.swift */; };
 		A65B345E238719AD00B9711C /* ExtraIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B345D238719AD00B9711C /* ExtraIDUITests.swift */; };
 		A65B346C238719F200B9711C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65B346B238719F200B9711C /* GoogleService-Info.plist */; };
+		A65B346F23871EE600B9711C /* TeachersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B346E23871EE600B9711C /* TeachersClient.swift */; };
+		A65B3472238721B100B9711C /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B3471238721B100B9711C /* Teacher.swift */; };
 		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		A65B345D238719AD00B9711C /* ExtraIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraIDUITests.swift; sourceTree = "<group>"; };
 		A65B345F238719AD00B9711C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65B346B238719F200B9711C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A65B346E23871EE600B9711C /* TeachersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersClient.swift; sourceTree = "<group>"; };
+		A65B3471238721B100B9711C /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.release.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.release.xcconfig"; sourceTree = "<group>"; };
 		D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		A65B343A238719AB00B9711C /* ExtraID */ = {
 			isa = PBXGroup;
 			children = (
+				A65B347023871F7200B9711C /* Models */,
+				A65B346D23871ECC00B9711C /* Network */,
 				A65B343B238719AB00B9711C /* AppDelegate.swift */,
 				A65B343D238719AB00B9711C /* SceneDelegate.swift */,
 				A65B343F238719AB00B9711C /* ViewController.swift */,
@@ -148,6 +154,22 @@
 			path = ExtraIDUITests;
 			sourceTree = "<group>";
 		};
+		A65B346D23871ECC00B9711C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A65B346E23871EE600B9711C /* TeachersClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A65B347023871F7200B9711C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A65B3471238721B100B9711C /* Teacher.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C2FDE7E4D36B0013A3E66D8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +180,6 @@
 				3EFFBCBD63A77A2DFF8DD993 /* Pods-ExtraIDTests.debug.xcconfig */,
 				F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -413,6 +434,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65B3440238719AB00B9711C /* ViewController.swift in Sources */,
+				A65B3472238721B100B9711C /* Teacher.swift in Sources */,
+				A65B346F23871EE600B9711C /* TeachersClient.swift in Sources */,
 				A65B343C238719AB00B9711C /* AppDelegate.swift in Sources */,
 				A65B343E238719AB00B9711C /* SceneDelegate.swift in Sources */,
 			);
