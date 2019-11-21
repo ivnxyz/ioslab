@@ -20,7 +20,7 @@ class Exam {
         self.studentsIds = studentsIds
     }
     
-    convenience init?(examData: [String: AnyObject]) {
+    convenience init?(examData: [String: Any]) {
         guard
             let name = examData["nombre"] as? String,
             let studentsIds = examData["estudiantes"] as? [String]
