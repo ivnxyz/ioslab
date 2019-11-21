@@ -41,6 +41,9 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.borderRadius" value="15"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ToN-g0-Bpz" kind="show" id="7rx-nA-Rk1"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOa-GW-khU">
                                 <rect key="frame" x="159" y="310" width="97" height="34"/>
@@ -56,6 +59,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="100.44642857142857"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="KC0-Hx-S3X">
+            <objects>
+                <viewController id="ToN-g0-Bpz" customClass="HomeViewController" customModule="ExtraID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A3h-PO-wrR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N0v-Pe-sV4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LVa-Jn-ibh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FB3-Y8-BIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="100"/>
         </scene>
     </scenes>
 </document>
