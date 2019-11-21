@@ -9,6 +9,7 @@ target 'ExtraID' do
   pod 'Firebase/Analytics'	
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'IQKeyboardManagerSwift'
 
   target 'ExtraIDTests' do
     inherit! :search_paths
