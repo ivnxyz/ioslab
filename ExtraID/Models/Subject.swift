@@ -16,13 +16,15 @@ class Subject {
     let schedule: String
     let key: String
     let studentsIds: [String]
+    let examsIds: [String]
     
-    init(name: String, classroom: String, schedule: String, key: String, studentsIds: [String]) {
+    init(name: String, classroom: String, schedule: String, key: String, studentsIds: [String], examsIds: [String]) {
         self.name = name
         self.classroom = classroom
         self.schedule = schedule
         self.key = key
         self.studentsIds = studentsIds
+        self.examsIds = examsIds
     }
     
     // Inicializar con un diccionario
@@ -32,10 +34,11 @@ class Subject {
             let classroom = subjectData["salon"] as? String,
             let schedule = subjectData["horario"] as? String,
             let key = subjectData["llave"] as? String,
-            let studentsIds = subjectData["alumnos"] as? [String]
+            let studentsIds = subjectData["alumnos"] as? [String],
+            let examsIds = subjectData["examenes"] as? [String]
         else { return nil }
         
-        self.init(name: name, classroom: classroom, schedule: schedule, key: key, studentsIds: studentsIds)
+        self.init(name: name, classroom: classroom, schedule: schedule, key: key, studentsIds: studentsIds, examsIds: examsIds)
     }
     
 }
