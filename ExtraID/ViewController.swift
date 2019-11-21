@@ -18,7 +18,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        teachersClient.getTeacherProfile(teacherId: "KC7eobNOW1KIR9mluPYw")
+        teachersClient.getTeacherProfile(teacherId: "KC7eobNOW1KIR9mluPYw") { (error, teacher) in
+            print(teacher?.name)
+        }
     }
 
 

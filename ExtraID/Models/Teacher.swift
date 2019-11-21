@@ -25,7 +25,7 @@ class Teacher {
     }
     
     // Inicializar con un diccionario
-    convenience init?(teacherData: [String: AnyObject]) {
+    convenience init?(teacherData: [String: Any]) {
         guard
             let name = teacherData["nombre"] as? String,
             let apellidoPaterno = teacherData["apellido_paterno"] as? String,

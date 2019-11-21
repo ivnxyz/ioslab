@@ -26,15 +26,42 @@ class TeachersClient {
     }
     
     // Obtener el perfil de un profesor con su id
-    func getTeacherProfile(teacherId: String) {
+    func getTeacherProfile(teacherId: String, completionHandler: @escaping (Error?, Teacher?) -> Void) {
         teachersCollection.document(teacherId).getDocument { (snapshot, error) in
             if let error = error {
-                print("Hubo un error: ", error)
+                completionHandler(error, nil)
             } else if let snapshot = snapshot {
-                print(snapshot.data())
+                if let data = snapshot.data() {
+                    // Inicializar profesor
+                    let teacher = Teacher(teacherData: data)
+                    
+                    if let teacher = teacher {
+                        completionHandler(nil, teacher)
+                    } else {
+                        // Datos inválidos
+                        completionHandler(TeacherError.invalidData, nil)
+                    }
+                } else {
+                    // No hay objeto data
+                    completionHandler(TeacherError.noDataObject, nil)
+                }
             }
         }
     }
-    
-    
+}
+
+enum TeacherError: Error {
+    case invalidData
+    case noDataObject
+}
+
+extension TeacherError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .invalidData:
+            return NSLocalizedString("Los datos del maestro no son válidos", comment: "")
+        case .noDataObject:
+            return NSLocalizedString("No se encontró el objeto data", comment: "")
+        }
+    }
 }
