@@ -27,6 +27,7 @@
 		A65B348023872F6000B9711C /* ExamsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B347F23872F6000B9711C /* ExamsClient.swift */; };
 		A65B34822387314100B9711C /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B34812387314100B9711C /* AuthClient.swift */; };
 		A65B34842387374700B9711C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65B34832387374700B9711C /* GoogleService-Info.plist */; };
+		A65B34872387377E00B9711C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B34862387377E00B9711C /* CustomTextField.swift */; };
 		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		A65B347F23872F6000B9711C /* ExamsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsClient.swift; sourceTree = "<group>"; };
 		A65B34812387314100B9711C /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		A65B34832387374700B9711C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A65B34862387377E00B9711C /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.release.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.release.xcconfig"; sourceTree = "<group>"; };
 		D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		A65B343A238719AB00B9711C /* ExtraID */ = {
 			isa = PBXGroup;
 			children = (
+				A65B34852387376E00B9711C /* Views */,
 				A65B347023871F7200B9711C /* Models */,
 				A65B346D23871ECC00B9711C /* Network */,
 				A65B343B238719AB00B9711C /* AppDelegate.swift */,
@@ -189,6 +192,14 @@
 				A65B347D23872EDA00B9711C /* Exam.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A65B34852387376E00B9711C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A65B34862387377E00B9711C /* CustomTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C2FDE7E4D36B0013A3E66D8C /* Pods */ = {
@@ -454,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65B34872387377E00B9711C /* CustomTextField.swift in Sources */,
 				A65B348023872F6000B9711C /* ExamsClient.swift in Sources */,
 				A65B3440238719AB00B9711C /* ViewController.swift in Sources */,
 				A65B3474238726AD00B9711C /* SubjectsClient.swift in Sources */,
