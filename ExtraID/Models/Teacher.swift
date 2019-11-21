@@ -15,13 +15,15 @@ class Teacher {
     let apellidoPaterno: String
     let apellidoMaterno: String
     let photoUrl: String
+    let subjectsIds: [String]
     
     // Init
-    init(name: String, apellidoPaterno: String, apellidoMaterno: String, photoUrl: String) {
+    init(name: String, apellidoPaterno: String, apellidoMaterno: String, photoUrl: String, subjectsIds: [String]) {
         self.name = name
         self.apellidoPaterno = apellidoPaterno
         self.apellidoMaterno = apellidoMaterno
         self.photoUrl = photoUrl
+        self.subjectsIds = subjectsIds
     }
     
     // Inicializar con un diccionario
@@ -30,10 +32,11 @@ class Teacher {
             let name = teacherData["nombre"] as? String,
             let apellidoPaterno = teacherData["apellido_paterno"] as? String,
             let apellidoMaterno = teacherData["apellido_materno"] as? String,
-            let photoUrl = teacherData["foto_url"] as? String
+            let photoUrl = teacherData["foto_url"] as? String,
+            let subjectsIds = teacherData["materias"] as? [String]
         else { return nil }
         
-        self.init(name: name, apellidoPaterno: apellidoPaterno, apellidoMaterno: apellidoMaterno, photoUrl: photoUrl)
+        self.init(name: name, apellidoPaterno: apellidoPaterno, apellidoMaterno: apellidoMaterno, photoUrl: photoUrl, subjectsIds: subjectsIds)
     }
     
 }

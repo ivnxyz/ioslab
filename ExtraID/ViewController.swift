@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         teachersClient.getTeacherProfile(teacherId: "KC7eobNOW1KIR9mluPYw") { (error, teacher) in
-            print(teacher?.name)
+            print(teacher?.subjectsIds)
         }
     }
 
