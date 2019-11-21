@@ -35,7 +35,8 @@ import UIKit
     func styleButton() {
         // Configurar bordes
         layer.borderWidth = 2
-        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderColor = UIColor.white.cgColor
+        textColor = .white
         layer.cornerRadius = bounds.size.height/2
     }
     

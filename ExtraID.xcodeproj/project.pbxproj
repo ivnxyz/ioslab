@@ -30,6 +30,7 @@
 		A65B34872387377E00B9711C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B34862387377E00B9711C /* CustomTextField.swift */; };
 		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
 		FF8CED152387436300C20156 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CED142387436200C20156 /* HomeViewController.swift */; };
+		FF8CED17238746B500C20156 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CED16238746B500C20156 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		DCFF9BE4C70C23F3406164BF /* Pods_ExtraID_ExtraIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtraID_ExtraIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraIDTests.release.xcconfig"; path = "Target Support Files/Pods-ExtraIDTests/Pods-ExtraIDTests.release.xcconfig"; sourceTree = "<group>"; };
 		FF8CED142387436200C20156 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF8CED16238746B500C20156 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		A65B34852387376E00B9711C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF8CED16238746B500C20156 /* CustomButton.swift */,
 				A65B34862387377E00B9711C /* CustomTextField.swift */,
 			);
 			path = Views;
@@ -482,6 +485,7 @@
 				A65B343E238719AB00B9711C /* SceneDelegate.swift in Sources */,
 				A65B3478238729B200B9711C /* Student.swift in Sources */,
 				A65B347C23872BB000B9711C /* StudentsClient.swift in Sources */,
+				FF8CED17238746B500C20156 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
