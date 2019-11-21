@@ -33,9 +33,6 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
-                                <connections>
-                                    <segue destination="ToN-g0-Bpz" kind="show" id="7rx-nA-Rk1"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="e8m-uJ-9dq">
                                 <rect key="frame" x="20" y="375" width="374" height="146"/>
@@ -58,13 +55,6 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-jw-aqy">
-                                <rect key="frame" x="176.5" y="646" width="61" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="FaceID">
-                                    <color key="titleColor" red="0.00211348664" green="0.1721581519" blue="0.32550638910000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Fq-ld-zm7">
                                 <rect key="frame" x="30" y="180" width="354" height="165"/>
                                 <subviews>
@@ -89,14 +79,20 @@
                                     <constraint firstAttribute="width" secondItem="faH-Ho-VwX" secondAttribute="height" multiplier="187:82" id="BSu-4r-Jtb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp5-3K-95C">
+                                <rect key="frame" x="179" y="669" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TouchID"/>
+                                <connections>
+                                    <action selector="TouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eCn-AE-4KS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.62352941176470589" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Fq-ld-zm7" secondAttribute="trailing" constant="30" id="0Xx-3r-VhB"/>
                             <constraint firstItem="9Xy-Sl-lpd" firstAttribute="top" secondItem="e8m-uJ-9dq" secondAttribute="bottom" constant="40" id="4J2-8K-i4C"/>
-                            <constraint firstItem="bc4-jw-aqy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DF3-Z6-bHb"/>
                             <constraint firstItem="faH-Ho-VwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M02-qf-aCJ"/>
-                            <constraint firstItem="bc4-jw-aqy" firstAttribute="top" secondItem="9Xy-Sl-lpd" secondAttribute="bottom" constant="30" id="OaP-PJ-yfq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Xy-Sl-lpd" secondAttribute="trailing" constant="20" id="TxO-aG-hMN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="faH-Ho-VwX" secondAttribute="trailing" constant="20" id="ZNT-sS-Dgc"/>
                             <constraint firstItem="e8m-uJ-9dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cm8-H2-jKb"/>
@@ -104,12 +100,14 @@
                             <constraint firstItem="faH-Ho-VwX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="gpO-Ra-vCt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8m-uJ-9dq" secondAttribute="trailing" constant="20" id="k2M-Tw-yXr"/>
                             <constraint firstItem="7Fq-ld-zm7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kOC-bS-c31"/>
-                            <constraint firstItem="faH-Ho-VwX" firstAttribute="top" secondItem="bc4-jw-aqy" secondAttribute="bottom" constant="30" id="n22-25-dk4"/>
                             <constraint firstItem="e8m-uJ-9dq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uhj-Lx-KMK"/>
                             <constraint firstItem="e8m-uJ-9dq" firstAttribute="top" secondItem="7Fq-ld-zm7" secondAttribute="bottom" constant="30" id="z9M-TV-b2K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="ToN-g0-Bpz" kind="modal" identifier="showHomeScreen" id="1Ix-Rc-9x5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

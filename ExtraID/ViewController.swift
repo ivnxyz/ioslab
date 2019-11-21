@@ -10,7 +10,8 @@ import UIKit
 import LocalAuthentication
 
 class ViewController: UIViewController {
-    
+
+    var abre = HomeViewController()
     lazy var teachersClient: TeachersClient = {
        return TeachersClient()
     }()
@@ -24,7 +25,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func showErrorMessageForLAErrorCode( errorCode:Int ) -> String{
+    /*func showErrorMessageForLAErrorCode( errorCode:Int ) -> String{
         
         var message = ""
         
@@ -95,8 +96,50 @@ class ViewController: UIViewController {
 
     @IBAction func clickLoginButton(_ sender: Any) {
         self.authenticateUserTouchID()
+    }*/
+  
+    @IBAction func TouchID(_ sender: Any) {
+        print("hello there!.. You have clicked the touch ID")
+                
+                let myContext = LAContext()
+                let myLocalizedReasonString = "Biometric Authntication testing !! "
+                
+                var authError: NSError?
+                if #available(iOS 8.0, macOS 10.12.1, *) {
+                    if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                        myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                            
+                            DispatchQueue.main.async {
+                                if success {
+                                    // User authenticated successfully, take appropriate action
+                                    self.performSegue(withIdentifier: "showHomeScreen", sender: nil)
+                                } else {
+                                    // User did not authenticate successfully, look at error and take appropriate action
+                                    print( "Sorry!!... User did not authenticate successfully")
+                                }
+                            }
+                        }
+                    } else {
+                        // Could not evaluate policy; look at authError and present an appropriate message to user
+                        print( "Sorry!!.. Could not evaluate policy.")
+                    }
+                } else {
+                    // Fallback on earlier versions
+                    
+                    print("successLabel.text = Ooops!!.. This feature is not supported.")
+                }
+    }
+    
+    
+ func transition()
+ {
+     //Current Code, default colour is black
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+       if let viewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as? UIViewController {
+           self.present(viewController, animated: true, completion: nil)
+       }
+
+  }
     }
 
-
-}
 
