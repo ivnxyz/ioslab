@@ -48,6 +48,16 @@ class TeachersClient {
             }
         }
     }
+    
+    // Guardar el nombre de un profesor
+    func saveTeacherName(name: String, teacherId: String, completionHandler: @escaping(Error?) -> Void) {
+        // Crear datos
+        let data = ["nombre": name]
+        
+        teachersCollection.document(teacherId).setData(data) { (error) in
+            completionHandler(error)
+        }
+    }
 }
 
 enum TeacherError: Error {
