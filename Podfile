@@ -8,6 +8,7 @@ target 'ExtraID' do
   # Pods for ExtraID
   pod 'Firebase/Analytics'	
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
 
   target 'ExtraIDTests' do
     inherit! :search_paths

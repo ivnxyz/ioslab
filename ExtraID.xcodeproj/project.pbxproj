@@ -26,6 +26,7 @@
 		A65B347C23872BB000B9711C /* StudentsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B347B23872BB000B9711C /* StudentsClient.swift */; };
 		A65B347E23872EDA00B9711C /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B347D23872EDA00B9711C /* Exam.swift */; };
 		A65B348023872F6000B9711C /* ExamsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B347F23872F6000B9711C /* ExamsClient.swift */; };
+		A65B34822387314100B9711C /* AuthClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B34812387314100B9711C /* AuthClient.swift */; };
 		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		A65B347B23872BB000B9711C /* StudentsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsClient.swift; sourceTree = "<group>"; };
 		A65B347D23872EDA00B9711C /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
 		A65B347F23872F6000B9711C /* ExamsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamsClient.swift; sourceTree = "<group>"; };
+		A65B34812387314100B9711C /* AuthClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthClient.swift; sourceTree = "<group>"; };
 		AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.release.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.release.xcconfig"; sourceTree = "<group>"; };
 		D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				A65B3473238726AD00B9711C /* SubjectsClient.swift */,
 				A65B347B23872BB000B9711C /* StudentsClient.swift */,
 				A65B347F23872F6000B9711C /* ExamsClient.swift */,
+				A65B34812387314100B9711C /* AuthClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				A65B3440238719AB00B9711C /* ViewController.swift in Sources */,
 				A65B3474238726AD00B9711C /* SubjectsClient.swift in Sources */,
 				A65B3476238726F000B9711C /* Subject.swift in Sources */,
+				A65B34822387314100B9711C /* AuthClient.swift in Sources */,
 				A65B3472238721B100B9711C /* Teacher.swift in Sources */,
 				A65B346F23871EE600B9711C /* TeachersClient.swift in Sources */,
 				A65B343C238719AB00B9711C /* AppDelegate.swift in Sources */,
