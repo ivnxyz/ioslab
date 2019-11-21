@@ -1,0 +1,6 @@
+framework module Pods_ExtraID_ExtraIDUITests {
+  umbrella header "Pods-ExtraID-ExtraIDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

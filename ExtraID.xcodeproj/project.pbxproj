@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441560E09131DDA3609AEAF4 /* Pods_ExtraID_ExtraIDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF9BE4C70C23F3406164BF /* Pods_ExtraID_ExtraIDUITests.framework */; };
+		4C87972DD468C3B13D11A295 /* Pods_ExtraID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A78B5C689CBD4C69E790C87 /* Pods_ExtraID.framework */; };
 		A65B343C238719AB00B9711C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B343B238719AB00B9711C /* AppDelegate.swift */; };
 		A65B343E238719AB00B9711C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B343D238719AB00B9711C /* SceneDelegate.swift */; };
 		A65B3440238719AB00B9711C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B343F238719AB00B9711C /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		A65B3448238719AD00B9711C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65B3446238719AD00B9711C /* LaunchScreen.storyboard */; };
 		A65B3453238719AD00B9711C /* ExtraIDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B3452238719AD00B9711C /* ExtraIDTests.swift */; };
 		A65B345E238719AD00B9711C /* ExtraIDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B345D238719AD00B9711C /* ExtraIDUITests.swift */; };
+		A65B346C238719F200B9711C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65B346B238719F200B9711C /* GoogleService-Info.plist */; };
+		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3EFFBCBD63A77A2DFF8DD993 /* Pods-ExtraIDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraIDTests.debug.xcconfig"; path = "Target Support Files/Pods-ExtraIDTests/Pods-ExtraIDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtraIDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D5BBEC109BBD225515C744 /* Pods-ExtraID-ExtraIDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID-ExtraIDUITests.release.xcconfig"; path = "Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A78B5C689CBD4C69E790C87 /* Pods_ExtraID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtraID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65B3438238719AB00B9711C /* ExtraID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtraID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65B343B238719AB00B9711C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A65B343D238719AB00B9711C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,12 @@
 		A65B3459238719AD00B9711C /* ExtraIDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtraIDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65B345D238719AD00B9711C /* ExtraIDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraIDUITests.swift; sourceTree = "<group>"; };
 		A65B345F238719AD00B9711C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A65B346B238719F200B9711C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.release.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.release.xcconfig"; sourceTree = "<group>"; };
+		D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.debug.xcconfig"; sourceTree = "<group>"; };
+		DCFF9BE4C70C23F3406164BF /* Pods_ExtraID_ExtraIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtraID_ExtraIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraIDTests.release.xcconfig"; path = "Target Support Files/Pods-ExtraIDTests/Pods-ExtraIDTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C87972DD468C3B13D11A295 /* Pods_ExtraID.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441560E09131DDA3609AEAF4 /* Pods_ExtraID_ExtraIDUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				A65B3451238719AD00B9711C /* ExtraIDTests */,
 				A65B345C238719AD00B9711C /* ExtraIDUITests */,
 				A65B3439238719AB00B9711C /* Products */,
+				C2FDE7E4D36B0013A3E66D8C /* Pods */,
+				CC12AFC46685A2A393D66144 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +125,7 @@
 				A65B3444238719AD00B9711C /* Assets.xcassets */,
 				A65B3446238719AD00B9711C /* LaunchScreen.storyboard */,
 				A65B3449238719AD00B9711C /* Info.plist */,
+				A65B346B238719F200B9711C /* GoogleService-Info.plist */,
 			);
 			path = ExtraID;
 			sourceTree = "<group>";
@@ -128,6 +148,30 @@
 			path = ExtraIDUITests;
 			sourceTree = "<group>";
 		};
+		C2FDE7E4D36B0013A3E66D8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */,
+				AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */,
+				D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */,
+				56D5BBEC109BBD225515C744 /* Pods-ExtraID-ExtraIDUITests.release.xcconfig */,
+				3EFFBCBD63A77A2DFF8DD993 /* Pods-ExtraIDTests.debug.xcconfig */,
+				F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC12AFC46685A2A393D66144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A78B5C689CBD4C69E790C87 /* Pods_ExtraID.framework */,
+				DCFF9BE4C70C23F3406164BF /* Pods_ExtraID_ExtraIDUITests.framework */,
+				4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A65B3462238719AD00B9711C /* Build configuration list for PBXNativeTarget "ExtraID" */;
 			buildPhases = (
+				05CB6AB0C51B9D3D6B1E7AB7 /* [CP] Check Pods Manifest.lock */,
 				A65B3434238719AB00B9711C /* Sources */,
 				A65B3435238719AB00B9711C /* Frameworks */,
 				A65B3436238719AB00B9711C /* Resources */,
+				4D809545345D638D8AD24E5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A65B3465238719AD00B9711C /* Build configuration list for PBXNativeTarget "ExtraIDTests" */;
 			buildPhases = (
+				681242CDB21FE0FCE341D5D5 /* [CP] Check Pods Manifest.lock */,
 				A65B344A238719AD00B9711C /* Sources */,
 				A65B344B238719AD00B9711C /* Frameworks */,
 				A65B344C238719AD00B9711C /* Resources */,
@@ -170,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A65B3468238719AD00B9711C /* Build configuration list for PBXNativeTarget "ExtraIDUITests" */;
 			buildPhases = (
+				59E88609F3CB03BC7A6B3DE9 /* [CP] Check Pods Manifest.lock */,
 				A65B3455238719AD00B9711C /* Sources */,
 				A65B3456238719AD00B9711C /* Frameworks */,
 				A65B3457238719AD00B9711C /* Resources */,
+				588870B24228B96D62F605BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65B3448238719AD00B9711C /* LaunchScreen.storyboard in Resources */,
+				A65B346C238719F200B9711C /* GoogleService-Info.plist in Resources */,
 				A65B3445238719AD00B9711C /* Assets.xcassets in Resources */,
 				A65B3443238719AB00B9711C /* Main.storyboard in Resources */,
 			);
@@ -253,6 +303,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CB6AB0C51B9D3D6B1E7AB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExtraID-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D809545345D638D8AD24E5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExtraID/Pods-ExtraID-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExtraID/Pods-ExtraID-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExtraID/Pods-ExtraID-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		588870B24228B96D62F605BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExtraID-ExtraIDUITests/Pods-ExtraID-ExtraIDUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E88609F3CB03BC7A6B3DE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExtraID-ExtraIDUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		681242CDB21FE0FCE341D5D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExtraIDTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A65B3434238719AB00B9711C /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		A65B3463238719AD00B9711C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +603,7 @@
 		};
 		A65B3464238719AD00B9711C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB134ACE2BD45D31BCE0FF81 /* Pods-ExtraID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +621,7 @@
 		};
 		A65B3466238719AD00B9711C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFFBCBD63A77A2DFF8DD993 /* Pods-ExtraIDTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +643,7 @@
 		};
 		A65B3467238719AD00B9711C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +665,7 @@
 		};
 		A65B3469238719AD00B9711C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D094F2611E1AA1611F0FF1 /* Pods-ExtraID-ExtraIDUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +685,7 @@
 		};
 		A65B346A238719AD00B9711C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D5BBEC109BBD225515C744 /* Pods-ExtraID-ExtraIDUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
