@@ -29,6 +29,9 @@
 		A65B34842387374700B9711C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A65B34832387374700B9711C /* GoogleService-Info.plist */; };
 		A65B34872387377E00B9711C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65B34862387377E00B9711C /* CustomTextField.swift */; };
 		ABA96B9863FB6E0090ABF1B0 /* Pods_ExtraIDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8B93E44FEFA4EF4DAAFAA2 /* Pods_ExtraIDTests.framework */; };
+		FF16FEEA2387605C0097A208 /* ControladorTablaAlumnos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16FEE72387605C0097A208 /* ControladorTablaAlumnos.swift */; };
+		FF16FEEB2387605C0097A208 /* ControladorCeldaAlumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16FEE82387605C0097A208 /* ControladorCeldaAlumno.swift */; };
+		FF16FEEC2387605C0097A208 /* ControladorAlumnos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16FEE92387605C0097A208 /* ControladorAlumnos.swift */; };
 		FF8CED152387436300C20156 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CED142387436200C20156 /* HomeViewController.swift */; };
 		FF8CED17238746B500C20156 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8CED16238746B500C20156 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +88,9 @@
 		D74B8DEF2C2BD79DA272F17B /* Pods-ExtraID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraID.debug.xcconfig"; path = "Target Support Files/Pods-ExtraID/Pods-ExtraID.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFF9BE4C70C23F3406164BF /* Pods_ExtraID_ExtraIDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExtraID_ExtraIDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AC4CE211F2291EFBF2F8BD /* Pods-ExtraIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExtraIDTests.release.xcconfig"; path = "Target Support Files/Pods-ExtraIDTests/Pods-ExtraIDTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF16FEE72387605C0097A208 /* ControladorTablaAlumnos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorTablaAlumnos.swift; sourceTree = "<group>"; };
+		FF16FEE82387605C0097A208 /* ControladorCeldaAlumno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorCeldaAlumno.swift; sourceTree = "<group>"; };
+		FF16FEE92387605C0097A208 /* ControladorAlumnos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControladorAlumnos.swift; sourceTree = "<group>"; };
 		FF8CED142387436200C20156 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FF8CED16238746B500C20156 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +156,9 @@
 				A65B343F238719AB00B9711C /* ViewController.swift */,
 				FF8CED142387436200C20156 /* HomeViewController.swift */,
 				A65B3441238719AB00B9711C /* Main.storyboard */,
+				FF16FEE92387605C0097A208 /* ControladorAlumnos.swift */,
+				FF16FEE82387605C0097A208 /* ControladorCeldaAlumno.swift */,
+				FF16FEE72387605C0097A208 /* ControladorTablaAlumnos.swift */,
 				A65B3444238719AD00B9711C /* Assets.xcassets */,
 				A65B3446238719AD00B9711C /* LaunchScreen.storyboard */,
 				A65B3449238719AD00B9711C /* Info.plist */,
@@ -472,7 +481,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65B34872387377E00B9711C /* CustomTextField.swift in Sources */,
+				FF16FEEC2387605C0097A208 /* ControladorAlumnos.swift in Sources */,
 				A65B348023872F6000B9711C /* ExamsClient.swift in Sources */,
+				FF16FEEA2387605C0097A208 /* ControladorTablaAlumnos.swift in Sources */,
 				A65B3440238719AB00B9711C /* ViewController.swift in Sources */,
 				A65B3474238726AD00B9711C /* SubjectsClient.swift in Sources */,
 				A65B3476238726F000B9711C /* Subject.swift in Sources */,
@@ -482,6 +493,7 @@
 				A65B346F23871EE600B9711C /* TeachersClient.swift in Sources */,
 				A65B343C238719AB00B9711C /* AppDelegate.swift in Sources */,
 				A65B347E23872EDA00B9711C /* Exam.swift in Sources */,
+				FF16FEEB2387605C0097A208 /* ControladorCeldaAlumno.swift in Sources */,
 				A65B343E238719AB00B9711C /* SceneDelegate.swift in Sources */,
 				A65B3478238729B200B9711C /* Student.swift in Sources */,
 				A65B347C23872BB000B9711C /* StudentsClient.swift in Sources */,
