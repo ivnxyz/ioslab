@@ -33,6 +33,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ob8-6y-ZKr"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="e8m-uJ-9dq">
                                 <rect key="frame" x="20" y="375" width="374" height="146"/>
@@ -43,7 +46,7 @@
                                             <constraint firstAttribute="height" constant="55" id="hrM-TE-rNh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZa-cm-eKq" customClass="CustomTextField" customModule="ExtraID" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="91" width="374" height="55"/>
@@ -51,7 +54,7 @@
                                             <constraint firstAttribute="height" constant="55" id="hni-Hd-wtn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -59,13 +62,13 @@
                                 <rect key="frame" x="30" y="180" width="354" height="165"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swift_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="knD-QU-eAN">
-                                        <rect key="frame" x="0.0" y="0.0" width="169.00000000000023" height="165"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="knD-QU-eAN" secondAttribute="height" multiplier="131:128" id="JZL-OB-NaJ"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FESAc" translatesAutoresizingMaskIntoConstraints="NO" id="GYK-oS-8fp">
-                                        <rect key="frame" x="189" y="0.0" width="165.00000000000011" height="165.00000000000011"/>
+                                        <rect key="frame" x="189" y="0.0" width="165" height="165"/>
                                         <color key="tintColor" red="0.96640691050000005" green="1" blue="0.93574796100000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GYK-oS-8fp" secondAttribute="height" multiplier="1:1" id="KeT-UR-BFI"/>
@@ -79,10 +82,12 @@
                                     <constraint firstAttribute="width" secondItem="faH-Ho-VwX" secondAttribute="height" multiplier="187:82" id="BSu-4r-Jtb"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp5-3K-95C">
-                                <rect key="frame" x="179" y="669" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TouchID"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp5-3K-95C">
+                                <rect key="frame" x="170" y="636" width="74" height="62"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <state key="normal" title="TouchID">
+                                    <color key="titleColor" red="0.01077033021" green="0.1687814295" blue="0.32550731300000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="TouchID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eCn-AE-4KS"/>
                                 </connections>
@@ -91,12 +96,15 @@
                         <color key="backgroundColor" red="0.83529411764705885" green="0.62352941176470589" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Fq-ld-zm7" secondAttribute="trailing" constant="30" id="0Xx-3r-VhB"/>
+                            <constraint firstItem="Tp5-3K-95C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4HF-3c-xTs"/>
                             <constraint firstItem="9Xy-Sl-lpd" firstAttribute="top" secondItem="e8m-uJ-9dq" secondAttribute="bottom" constant="40" id="4J2-8K-i4C"/>
                             <constraint firstItem="faH-Ho-VwX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M02-qf-aCJ"/>
+                            <constraint firstItem="Tp5-3K-95C" firstAttribute="top" secondItem="9Xy-Sl-lpd" secondAttribute="bottom" constant="20" id="SD9-vS-KYB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Xy-Sl-lpd" secondAttribute="trailing" constant="20" id="TxO-aG-hMN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="faH-Ho-VwX" secondAttribute="trailing" constant="20" id="ZNT-sS-Dgc"/>
                             <constraint firstItem="e8m-uJ-9dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cm8-H2-jKb"/>
                             <constraint firstItem="9Xy-Sl-lpd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dkp-dn-ncZ"/>
+                            <constraint firstItem="faH-Ho-VwX" firstAttribute="top" secondItem="Tp5-3K-95C" secondAttribute="bottom" constant="20" id="eY9-Kr-LHl"/>
                             <constraint firstItem="faH-Ho-VwX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="gpO-Ra-vCt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e8m-uJ-9dq" secondAttribute="trailing" constant="20" id="k2M-Tw-yXr"/>
                             <constraint firstItem="7Fq-ld-zm7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kOC-bS-c31"/>
@@ -106,6 +114,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="WOa-GW-khU" id="mGt-Xg-Xke"/>
+                        <outlet property="passwordTextField" destination="PZa-cm-eKq" id="O1O-XP-mgS"/>
+                        <outlet property="touchIdButton" destination="Tp5-3K-95C" id="MFs-in-SPE"/>
                         <segue destination="ToN-g0-Bpz" kind="modal" identifier="showHomeScreen" id="1Ix-Rc-9x5"/>
                     </connections>
                 </viewController>
